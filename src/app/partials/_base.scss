@@ -1,0 +1,9 @@
+html, body, #root {
+  margin: 0;
+  height: 100%;
+  @include quicksand-medium;
+}
+
+// body, h1, h2, h3, h4, p, a {
+//   color: $primary-blue;
+// }

@@ -1,0 +1,49 @@
+// About Us section
+.about-us{
+  & p{
+    @include quicksand-light;
+    margin-top: .2rem;
+  }
+ 
+ & img{
+   width: 300px;
+   display: block;
+ }
+  & button{
+    margin-top: .8rem;
+  }
+}
+// End of About Us section
+
+// Feeds Panel
+.feeds-panel{
+    background-color: lighten($black, 90%);
+    & .feed-context-switch{
+        margin-bottom: 20px;
+    }
+    & .card-title{
+        @include quicksand-bold();
+    }
+    & .card-text{
+        font-size: 0.8rem;
+    }
+}
+// End of feeds panel
+
+// Value Propostion section
+.value-proposition{
+  height: 400px;
+}
+// End of Value Proposition
+
+// Our Services section
+.our-services{
+  background-color: $primary-green;
+  color: #ffffff;
+  & .col-12{
+    & h4{
+      color: $white;
+    }
+  }
+}
+// End of Services Section

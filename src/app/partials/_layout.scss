@@ -1,0 +1,169 @@
+.main-container{
+  overflow-x: hidden;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+// Main Navigation
+.main-navigation{
+  width: 100vw;
+  display: block;
+  padding-top: 0.5rem;
+  transition: all 0.3s ease;
+  & .container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  & .navbar-brand{
+    & img{
+      width: 200px;
+      transition: width 0.3s ease;
+    }
+  }
+
+  & .navbar-toggler{
+    align-self: center;
+    opacity: 1;
+  }
+
+  & .navbar-hamburger{
+      background: transparent;
+      border: none;
+      // margin-right: 60px;
+    //   align-self: center;
+      display: flex;
+      flex-direction: nowrap row;
+      align-items: center;
+      & p{
+          text-transform: uppercase;
+        //   display: inline-block;
+          color: $white;
+          margin-top: 1em;
+          margin-right: 5px;
+          font-size: 0.7rem;
+          @include quicksand-medium();
+      }
+      & span{
+          color: $white;
+        //   display: inline-block;
+      }
+      &:hover{
+          cursor: pointer;
+      }
+  }
+
+//   & .navbar-collapse{
+//     width: 450px;
+//   }
+
+  & .navbar-nav{
+    margin-left: 40%;
+    & .nav-item{
+      margin-right: 10px;
+      & a.nav-link{
+        color: white;
+        @include quicksand-medium;
+      }
+    }
+
+    & .nav-item.active{
+      & a.nav-link{
+        color: white;
+      }
+    }
+  }
+}
+
+.navbar.minimized{
+  background-color: $white;
+  padding-top: .5rem;
+  box-shadow: 0px 2px 2px rgba($black, 0.3);
+  display: block;
+  & .navbar-brand{
+    & img{
+      width: 100px;
+    }
+  }
+  & .navbar-nav{
+    margin-left: 45%;
+  }
+  & .nav-item {
+    & a.nav-link{
+      color: $primary-blue;
+    }
+  }
+  & .nav-item.active{
+    & a.nav-link{
+      color: $primary-blue;
+    }
+  }
+  & .navbar-hamburger{
+      & span{
+          color: $primary-blue;
+      }
+  }
+
+}
+// End of Main Navigation
+
+
+// Landing
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  background: url('http://i.huffpost.com/gen/1171903/images/o-STARTUPS-facebook.jpg') center center no-repeat;
+  background-size: cover;
+  color: white;
+  height: 100vh;
+}
+
+.overlay{
+  position: relative;
+  width: 100%;
+  display: block;
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+  & .inner{
+    padding-top: 20rem;
+  }
+}
+
+.landing-h1 {
+  @include montserrat-bold;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+.landing-logo {
+  height: 12rem;
+  background-color: white;
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
+.landing-text{
+  // width: 50vw;
+  display: block;
+}
+.landing-h4 {
+  @include quicksand-light;
+  margin: 1rem 0;
+}
+// End of Landing
+
+.content-section{
+  padding: 2rem 0;
+  & .section-header{
+    @include montserrat-regular();
+    padding: 20px 0;
+    color: $primary-blue;
+    text-align: center;
+    display: block;
+  }
+}

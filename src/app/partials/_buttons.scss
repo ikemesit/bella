@@ -1,0 +1,18 @@
+.btn{
+    @include quicksand-medium;
+}
+
+.btn-outline-success{
+    transition: 0.2s ease-in;
+    border: 2px solid $primary-green;
+    color: $primary-green;
+    &:hover{
+        background-color: $primary-green;
+        border: 2px solid $primary-green;
+        cursor: pointer;
+    }
+}
+
+.btn-rounded{
+    border-radius: 60px;
+}
